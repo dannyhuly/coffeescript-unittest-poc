@@ -12,8 +12,6 @@ module.exports = function (config) {
             { pattern: 'app/**/*.js.map', included: false },
         ],
 
-        reporters: ['html','coverage'],
-
         preprocessors: {
             // source files, that you wanna generate coverage for
             // do not include tests or libraries
@@ -21,13 +19,19 @@ module.exports = function (config) {
             'app/**/*.js': ['coverage']
         },
 
-        htmlReporter: {
-           outputDir: 'tests/units-results',
-        },
+        reporters: [
+            'progress', //output unittest progress to console
+            'coverage', //generate a coverage html reporter
+            'html'      //generate a unittest html reporter
+        ],
 
         coverageReporter: {
             type : 'html',
             dir : 'tests/coverage'
+        },
+
+        htmlReporter: {
+           outputDir: 'tests/units-results',
         },
 
         // web server port
@@ -35,9 +39,6 @@ module.exports = function (config) {
 
         // enable / disable colors in the output (reporters and logs)
         colors: true,
-
-        //Capture all console output and pipe it to the terminal.
-        captureConsole: true,
 
         // level of logging
         // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
