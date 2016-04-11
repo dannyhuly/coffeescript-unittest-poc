@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "calculator.js",
+  "sourceRoot": "..\\..",
+  "sources": [
+    "app\\calculator\\calculator.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAM,IAAC,CAAA;;;yBAEH,GAAA,GAAK,SAAC,CAAD,EAAI,CAAJ;aAAU,CAAA,GAAI;IAAd;;yBAEL,GAAA,GAAK,SAAC,CAAD,EAAI,CAAJ;aAAU,CAAA,GAAI;IAAd;;yBAEL,IAAA,GAAM,SAAC,CAAD,EAAI,CAAJ;aAAU,CAAA,GAAI;IAAd;;yBAEN,GAAA,GAAK,SAAC,CAAD,EAAI,CAAJ;aAAU,CAAA,GAAI;IAAd;;;;;AART"
+}
